@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table border="3px">
+            <tr style="color: orange;">
+                <th>Ename</th>
+                <th>Manager Name</th>
+                <th>Salary</th>
+                <th>Dept Name</th>
+                <th>Dept No</th>
+                <th>Dept loc</th>
+            </tr>
+            {% for em in EMO %}
+            <tr>
+                <td style="color: aqua;">{{em.ename}}</td>
+                
+                <td>{{em.mgr}}</td>
+                <td>{{em.sal}}</td>
+                <td>{{em.deptno.dname}}</td>
+                <td>{{em.deptno.deptno}}</td>
+                <td>{{em.deptno.dloc}}</td>
+                
+
+
+
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
